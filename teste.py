@@ -25,8 +25,8 @@ class StringGenerator(object):
     @cherrypy.expose
     def generate(self, duvida=8):
         natural_language_understanding = NaturalLanguageUnderstandingV1(
-          username='31a0b567-7c67-4000-90a9-12ff29f56446',
-          password='OWY6mgLqVLSX',
+          username='xxxxxxxxxxxxx',
+          password='xxxxxxx',
           version='2018-03-16')
 
         vr_text = duvida
@@ -37,7 +37,7 @@ class StringGenerator(object):
           features=Features(
             categories=CategoriesOptions(),
             entities=EntitiesOptions(
-                model='7216ab41-66b8-4fd2-bbc2-0741e0a12f4f')
+                model='xxxxxxxxxxxx')
             ))
 
         resposta = ''
